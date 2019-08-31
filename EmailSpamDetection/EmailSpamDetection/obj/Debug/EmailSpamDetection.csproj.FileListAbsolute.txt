@@ -1,0 +1,10 @@
+D:\LearningC#\page\Naive bayes\Email Spam\EmailSpamDetection\EmailSpamDetection\bin\Debug\EmailSpamDetection.exe.config
+D:\LearningC#\page\Naive bayes\Email Spam\EmailSpamDetection\EmailSpamDetection\bin\Debug\EmailSpamDetection.exe
+D:\LearningC#\page\Naive bayes\Email Spam\EmailSpamDetection\EmailSpamDetection\bin\Debug\EmailSpamDetection.pdb
+D:\LearningC#\page\Naive bayes\Email Spam\EmailSpamDetection\EmailSpamDetection\obj\Debug\EmailSpamDetection.csprojAssemblyReference.cache
+D:\LearningC#\page\Naive bayes\Email Spam\EmailSpamDetection\EmailSpamDetection\obj\Debug\EmailSpamDetection.Form1.resources
+D:\LearningC#\page\Naive bayes\Email Spam\EmailSpamDetection\EmailSpamDetection\obj\Debug\EmailSpamDetection.Properties.Resources.resources
+D:\LearningC#\page\Naive bayes\Email Spam\EmailSpamDetection\EmailSpamDetection\obj\Debug\EmailSpamDetection.csproj.GenerateResource.cache
+D:\LearningC#\page\Naive bayes\Email Spam\EmailSpamDetection\EmailSpamDetection\obj\Debug\EmailSpamDetection.csproj.CoreCompileInputs.cache
+D:\LearningC#\page\Naive bayes\Email Spam\EmailSpamDetection\EmailSpamDetection\obj\Debug\EmailSpamDetection.exe
+D:\LearningC#\page\Naive bayes\Email Spam\EmailSpamDetection\EmailSpamDetection\obj\Debug\EmailSpamDetection.pdb
