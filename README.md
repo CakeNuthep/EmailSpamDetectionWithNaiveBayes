@@ -1,7 +1,7 @@
 "# EmailSpamDetectionWithNaiveBayes" 
 เป็น Window Form ที่เขียนด้วยภาษา C# สำหรับในการตรวจจับ Email ว่า email ใหนเป็น Spam หรือไม่ใช้ Spam โดยใช้ naive bayes classifier
 
-[![Application](Application "Application")](https://github.com/CakeNuthep/EmailSpamDetectionWithNaiveBayes/blob/master/image/Application.PNG "Application")
+![](https://github.com/CakeNuthep/EmailSpamDetectionWithNaiveBayes/blob/master/image/Application.PNG)
 
 ## การทำงานของโปรแกรม
 #### โคดส่วนของการโหลดข้อมูลในคลาสที่ชื่อว่า LoadData
@@ -146,7 +146,7 @@ public static void fit(List<string> X, List<int> Y)
 ในฟังก์ชันที่ชื่อว่า fit จะเป็นฟังก์ชันสำหรับการ training โดยหลังจากที่เราทำการ training เราจะได้ค่ามาสามสิ่ง คือ
 -	**Log class priors** ที่เกิดจากเอาจำนวนเมล์ที่เป็น Span/ham  (ในที่นี้ Ham หมายถึงสิ่งที่ไม่ใช่ Spam) มาหารด้วยจำนวนอีเมลล์ทั้งหมด
 
-[![Log class prior](logClassPrior "Log class prior")](https://github.com/CakeNuthep/EmailSpamDetectionWithNaiveBayes/blob/master/image/log%20class%20prior.PNG "Log class prior")
+![](https://github.com/CakeNuthep/EmailSpamDetectionWithNaiveBayes/blob/master/image/log%20class%20prior.PNG)
 
 -	**Vocab** ที่เกิดจากการนำคำทั้งหมดที่ไม่ซ้ำกันมาเก็บ ยกตัวอย่างเช่นมีคำว่า [hi, please, enter, button,for,get,the,money,enter,button,now] ใน Vocab จะเก็บเหลือเฉพาะ [hi, please, enter, button,for,get,the,money,now]
 -	**Word counts** ที่เก็บจำนวนคำในเมล์ที่เป็น Spam/ham ว่าแต่ละคำซ้ำกันกี่คำ ยกตัวอย่างเช่น ในอีเมล์ที่เป็น Spam ทั้งหมดมีคำ [hi, please, enter, button,for,get,the,money,enter,button,now] เราจะเก็บได้ว่า
@@ -204,15 +204,15 @@ public static List<int> predict(List<string> X)
 
 **รูปแสดงสมการ Naïve Bayes Classification  ในการหาความน่าจะเป็นที่คาดว่าเป็น Spam**
 
-[![Log Spam Naive Bayes](LogSpamNaiveBayesOnly "Log Spam Naive Bayes")](https://github.com/CakeNuthep/EmailSpamDetectionWithNaiveBayes/blob/master/image/log%20spam%20naive%20bayes%20only.PNG "Log Spam Naive Bayes")
+![](https://github.com/CakeNuthep/EmailSpamDetectionWithNaiveBayes/blob/master/image/log%20spam%20naive%20bayes%20only.PNG)
 
 **รูปแสดงสมการ Naïve Bayes Classification  ในการหาความน่าจะเป็นที่คาดว่าเป็น Ham**
 
-[![Log Ham Naive Bayes](LogHamNaiveBayesOnly "Log Ham Naive Bayes")](https://github.com/CakeNuthep/EmailSpamDetectionWithNaiveBayes/blob/master/image/log%20ham%20naive%20bayes%20only.PNG "Log Ham Naive Bayes")
+![](https://github.com/CakeNuthep/EmailSpamDetectionWithNaiveBayes/blob/master/image/log%20ham%20naive%20bayes%20only.PNG)
 
 จะเห็นว่าเราใช้ Log ในการคำนวณซึ่งจะมีข้อควรระวังคือ Log0 จะไม่สามารถนิยามค่าได้ดังนั้นเราจึงป้องกันวิธีนี้โดยการทำ Laplace Smoothing หรือก็คือการบวกค่า 1 เข้าไปทุกๆค่าดังโคดนี้
 
-[![Laplace Smoothing](LaplaceSmoothing "Laplace Smoothing")](https://github.com/CakeNuthep/EmailSpamDetectionWithNaiveBayes/blob/master/image/Laplace%20Smoothing.png "Laplace Smoothing")
+![Laplace Smoothing](https://github.com/CakeNuthep/EmailSpamDetectionWithNaiveBayes/blob/master/image/Laplace%20Smoothing.png)
 
 หลังจากนั้นเราจะได้ค่า log⁡〖p(Spam│w_1,…,w_n )〗 และ log⁡〖p(Ham│w_1,…,w_n )〗 เราก็จะทำการเปรียบเทียบทั้ง 2 ค่าว่า ความน่าจะเป็นที่เป็น Spam มากกว่า Ham หรือไม่ ถ้ามากกว่าแสดงว่าเป็น Spam (ค่าเป็น 1) ถ้าน้อยกว่าแสดงว่าเป็น Ham  (ค่าเป็น 0)
 
